@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
                 controller.transform.position = targets[index % 5].position;
                 index++;
                 teleportingAnimator.SetTrigger("Located");
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
                 walkable = true;
                 teleportingAnimator.SetInteger("Status", 0);
             }
